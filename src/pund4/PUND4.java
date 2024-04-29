@@ -6,15 +6,21 @@ package pund4;
 
 /**
  *
- * @author javie
+ * @author Alberto Gálvez Gómez
+ * @since 29/04/24
+ * @version 1.0
  */
 public class PUND4 {
 
     /**
      * @param args the command line arguments
+     * @see operativa_Apuesta
      */
     public static void main(String[] args) {
        Apuesta laApuesta;
+       /**
+        * Atributo que indica el dinero disponible
+        */
         int mi_dinero;
 
         laApuesta = new Apuesta(1000, 4, 2);
@@ -23,6 +29,11 @@ public class PUND4 {
         System.out.println("El dinero que tengo tras las apuestas es " + mi_dinero);
     }
 
+    /**
+     * Función que opera con la apuesta
+     * @param laApuesta
+     * @param dinero 
+     */
     static void operativa_Apuesta(Apuesta laApuesta, int dinero) {
         try {
             System.out.println("Apostando...");
